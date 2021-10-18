@@ -1,5 +1,3 @@
-import pdb
-
 class TreeNode(object):
     def __init__(self, val=0, left=None, right=None):
         self.val = val
@@ -10,7 +8,6 @@ class TreeNode(object):
 class Solution(object):
     
     def _createBST(self, preorder, max_val):
-        pdb.set_trace()
         print(preorder)
         print(max_val)
         if not preorder or preorder[-1]>max_val:
